@@ -77,7 +77,7 @@ mode = 'fixmatch'
 target_epoch = 1
 
 label_loader = DataLoader(label_dataset, batch_size=8, shuffle=True, num_workers=4, pin_memory=True, drop_last=False)
-unlabel_loader = DataLoader(unlabel_dataset, batch_size=8, shuffle=True, num_workers=4, pin_memory=True, drop_last=False)
+unlabel_loader = DataLoader(unlabeled_dataset, batch_size=8, shuffle=True, num_workers=4, pin_memory=True, drop_last=False)
 
 for epoch in range(1, target_epoch+1):
     if mode == 'fixmatch':
